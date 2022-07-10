@@ -1,0 +1,211 @@
+.ChatRoomPage{
+    width: 100%;
+    height: calc(100vh-70px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.ChatRoom {
+    /* background-color: gray; */
+}
+.JoinRoomForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: -1rem; */
+    align-items: center;
+    gap: 2rem;
+    margin: 10%;
+}
+.ChatRoomHeader{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: var(--purple-dark);
+}
+.ChatRoomHeader > h6{
+    font-size: 0.8rem;
+    color: var(--purple-light);
+}
+.ChatRoomInput{
+    
+    font-size: 1.5rem;
+    border-bottom: 4px solid var(--purple-dark);
+    border-top: 0px;
+    border-left: 0px;
+    border-right:0px ;
+}
+
+.ButtonJoinRoom{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--purple);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.TextEditor{
+    width: 100%;
+    /* height: 80px; */
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    /* background-color: antiquewhite; */
+    padding: 2%;
+    align-items: center;
+    border-radius: 10px;
+    /* border-radius: 10px; */
+    /* -webkit-box-shadow: 0px 8px 68px -4px rgba(234, 0, 255, 0.3);
+    -moz-box-shadow: 0px 8px 68px -4px rgba(234, 0, 255, 0.3);
+    box-shadow: 0px 8px 68px -4px rgba(234, 0, 255, 0.3); */
+    
+
+}
+.TextBox{
+    width: 100%;
+    align-items: center;
+}
+
+.ChatComponent{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ChatInput{
+    background-color: rgb(241, 241, 241);
+    border: none;
+    outline: none;
+    /* width: 90%; */
+    height: 100px;
+    font-size: 1rem;
+    padding: 10px;
+    resize: none;
+    /* border-radius: 10px; */
+    position: relative;
+    overflow-y: scroll;
+    padding-left: 20px;
+}
+.TextEditorOptions{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
+.ChatRichBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s box-shadow;
+    padding: 5px;
+    /* border-radius: 10px; */
+    line-height: 0%;
+}
+.ChatRichBtn:hover{
+    -webkit-box-shadow: 2px 18px 43px -11px rgba(0,0,0,0.9);
+-moz-box-shadow: 2px 18px 43px -11px rgba(0,0,0,0.9);
+box-shadow: 2px 18px 43px -11px rgba(0,0,0,0.9);
+    transition: ease-in-out 0.2s box-shadow;
+}
+
+.ChatInput > a{
+    color: blue !important;
+    text-decoration: underline !important;
+    
+}
+
+.ChatBox{
+    background: rgb(255, 255, 255);
+    height: 55vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+    
+}
+
+.TextBoxButtons{
+    /* position: absolute;
+    bottom: 0;
+    left: -0px; */
+    width: 100%;
+    padding: 5px;
+    /* background-color: rgba(0, 0, 0, 0.122); */
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+}
+.EmojiOn{
+    cursor: pointer;
+}
+.MessageBox{
+    background-color: rgb(182, 182, 182);
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 2%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    /* padding-top: 2%; */
+    position:relative;
+}
+.MessageBoxTime{
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+}
+.MessageBoxSender{
+    position: absolute;
+    top: 0%;
+    right: 2%;
+}
+
+.MessageBoxSent{    
+    background-color: rgb(188, 173, 252);
+    width: 50%;
+    margin-left: 2%;
+    transform: translateX(90%);
+    margin-top: 2%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    /* padding-top: 2%; */
+    position:relative;
+}
+.MessageBoxTimeSent{
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+}
+.MessageBoxSenderSent{
+    position: absolute;
+    top: 0%;
+    right: 2%;
+}
+
+.RoomIdCopy{
+    font-size: 0.75rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+}
+.RoomIdCopy:active{
+    color: var(--purple-dark);
+}
+
+.RoomIdCopy:hover{
+    color: var(--pink-dark);
+}
+
+.ButtonOn{
+    border-bottom: 3px solid black;
+}

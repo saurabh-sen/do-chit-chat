@@ -1,0 +1,68 @@
+:root {
+  --font-head: "Poppins", sans-serif;
+  --font-body: "Mukta", sans-serif;
+  --font-head-secondary: "Montserrat", sans-serif;
+  --head-font-color-dark: purple;
+  --red: #ff3860;
+  --red-dark: #ff1443;
+  --red-light: #ff5c7c;
+  --blue: #498afb;
+  --blue-dark: #2674fa;
+  --blue-light: #6ca0fc;
+  --orange: #fa8142;
+  --orange-dark: #f96a1f;
+  --orange-light: #fb9865;
+  --green: #09c372;
+  --green-dark: #07a15e;
+  --green-light: #0be586;
+  --purple: #9166cc;
+  --purple-dark: #7d4bc3;
+  --purple-light: #a481d5;
+  --ff0: #ffdd57;
+  --ff0-dark: #ffd633;
+  --ff0-light: #ffe47a;
+  --pink: #ff4088;
+  --pink-dark: #ff1c72;
+  --pink-light: #ff649e;
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #ffffff;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #8200ce;
+  --gray6: #12181b;
+  --main-background: var(--gray6);
+  --CTA-text-color: rgba(255, 255, 255, 0.466);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+body{
+  font-family: var(--font-head) !important;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  padding-right: 2px;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(157, 157, 157, 0.45);
+}
