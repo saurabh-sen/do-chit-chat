@@ -6,9 +6,9 @@ function Navbar() {
   const navigate = useNavigate();
   return (
     <div className="Navbar">
-      <div className="Logo" onClick={() => navigate("/")}>
+      <div className="Logo">
         <h1 style={{ color: "var(--blue-light)" }}>
-          Colabs
+          chit
           <span style={{ color: "var(--purple-dark)" }}>Chat</span>
         </h1>
       </div>

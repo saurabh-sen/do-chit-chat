@@ -21,12 +21,13 @@ function ChatComponent({ socket, Name, RoomId }) {
         isFile: true,
       };
     } else {
-      console.log(
-        { curMsg },
-        new Date(Date.now()).getHours() +
-          ":" +
-          new Date(Date.now()).getMinutes()
-      );
+      // console.log(
+      //   { curMsg },
+      //   new Date(Date.now()).getHours() +
+      //     ":" +
+      //     new Date(Date.now()).getMinutes()
+      // );
+
       if (curMsg.trim() === "") return;
       messageData = {
         RoomId,
@@ -49,7 +50,7 @@ function ChatComponent({ socket, Name, RoomId }) {
 
   useEffect(() => {
     socket.on("receive_message", (data) => {
-      console.log({ data });
+      // console.log({ data });
       setMessageList((prev) => [...prev, data]);
     });
     var messageBody = document.querySelector("#messageBody");

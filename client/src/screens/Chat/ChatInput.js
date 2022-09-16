@@ -3,6 +3,8 @@ import { TextEditorOptions } from "./ChatFunctions";
 import EmojiPicker from "./ChatFunctions/EmojiPicker";
 import { BsEmojiLaughing } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
+import { GrFormAdd } from "react-icons/gr";
+import { GoMention } from "react-icons/go";
 import ChatInputButtons from "./ChatFunctions/ChatInputButtons";
 function ChatInput({ setCurMsg, sendMsg, setFileUploaded }) {
   const [showEmoji, setShowEmoji] = useState(false);
@@ -18,21 +20,40 @@ function ChatInput({ setCurMsg, sendMsg, setFileUploaded }) {
     <div className="TextEditor">
       <ChatInputButtons handleClick={handleClick} />
       <div className="TextBox">
-        <div
+        <input
           id="ho3f38hg8iy4r8"
           contentEditable={true}
           type="text"
-          placeholder="hey..."
+          placeholder="Chat comes here..."
           className="ChatInput"
           onChange={(e) => setCurMsg(e.target.value)}
           //   id="mytextarea"
-        ></div>
+        />
+        {/* </input> */}
 
         <div className="TextBoxButtons">
+        
+          <GrFormAdd
+            className="EmojiOn"
+            size={"1.2rem"}
+            style={{
+              color: "rgb(127 127 127)",
+              background: "#80808070",
+              borderRadius: "15px",
+              width: "1.4rem",
+              height: "1.4rem",
+            }}
+          />
+
           <BsEmojiLaughing
             className="EmojiOn"
             size={"1.2rem"}
             onClick={() => setShowEmoji(!showEmoji)}
+          />
+
+          <GoMention
+            className="EmojiOn"
+            size={"1.2rem"}
           />
 
           <IoMdSend

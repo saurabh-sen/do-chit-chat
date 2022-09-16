@@ -16,14 +16,11 @@ function Form({
         <div className="FormExtraBigText">
           <img src={FormExtra} className="formExtraImg" />
           <div className="FormBigText">
-            Get exclusive access <br /> to the Colabs Systems
+            just a chat app <br /> enjoy chatting
           </div>
         </div>
         <div className="FormExtraSmallText">
-          Colabs is a coming-of-age task management platform that you can design
-          like your own office when you work with teams. While it is true that
-          you cannot change the people that you will ultimately work with, you
-          can try to make the management part a bit more interesting.
+          chat with your friends and family
         </div>
       </div>
       <div className="Form">
@@ -35,7 +32,7 @@ function Form({
         <button
           className="FormButton"
           onClick={() => {
-            console.log(FormFunction);
+            // console.log(FormFunction);
             FormFunction();
           }}
         >
