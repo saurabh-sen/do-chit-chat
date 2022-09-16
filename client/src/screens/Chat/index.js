@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import ChatComponent from "./Chat";
 import ChatRoom from "./ChatRoom";
 import "./Chat.css";
-const socket = io.connect("http://localhost:9000");
+const socket = io.connect("https://guarded-citadel-79255.herokuapp.com/");
 function Chat() {
   const [Name, setName] = useState("");
   const [RoomId, setRoomId] = useState("");
